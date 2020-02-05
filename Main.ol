@@ -23,7 +23,7 @@ service Main ( params:MainParams ) { // name of the service must be the same as 
 	embed Console { // embed whatever service is defined in Console.ol
 		// This binds the input ports of Console to output ports here.
 		// If an output port does not exist, like Console here, it is automatically created.
-		bindIn: IP -> Console // , IP2 -> OP2, etc.
+		bindIn: IP -> OP // , IP2 -> OP2, etc.
 
 		// This binds the output ports of Console to either some input port or literal binding information, see below.
 
